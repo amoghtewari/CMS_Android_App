@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.atpc.cms.Main3Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/scrollView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="142dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="
+                CMS is a security application that when activated helps improve the chances of the user being able to recover the phone in case of theft in a crowded area while the earphone is plugged into the android device.
+        CMS runs a background service capable of discovering the event when a earphone jack is removed while the screen is locked.
+        CMS then goes on to ring an alarm along with flash light train to startle the perpetrator.
+        It also sends out the GPS location of the phone to 3 preselected phone no. through SMS service.
+
+        CMS is designed to help Metro, Bus or any other crowded transportation service commuters where phone theft is rampant.
+        All the user is required to do is select 3 contacts, toggle the switch within the app to ON, plug in their earphones and lock their screen.
+        CMS App makes sure users do not lose their phones without knowing where is exactly their phone is immediately with help of the alarm and flash train and eventually with the help of the GPS tracking.
+            "
+            android:id="@+id/textView2"
+            android:layout_alignParentStart="true" />
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Got It!"
+        android:id="@+id/button2"
+        android:onClick="gotit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="38dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take me to Settings"
+        android:id="@+id/button3"
+        android:onClick="switchtosettings"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
